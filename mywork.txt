@@ -1,0 +1,21 @@
+                                                                                                                   Name: Sravani.Kotigari
+                                                                                                                   Emp Id: 844603
+                                                                                                                   Fse-Chennai
+                                                                                                                   Trainer: suresh
+
+
+
+
+My associate Id: 844603 and my team members are
+1. 844627
+2. 844551
+3. 844619
+4. 844513
+My mini project is available in Github as” 844603-codesprint-ux-mywork” on Personal Fitness Trainer. My github  link : https://github.com/sravanikotigari/Sravani_fsd.git
+1.	https://github.com/sravanikotigari/844603-codesprint-ux-mywork.git
+2.	https://github.com/sravanikotigari/844603-codesprint-ux-teamwork.git
+
+In this code sprint contains Html, CSS, and Bootstraps, angular:
+In this codesprint-ux   my developing role is to create a Contactus page and View appointment page Local Storage page with validations . 
+
+
