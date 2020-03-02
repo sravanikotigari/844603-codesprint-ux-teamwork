@@ -1,0 +1,22 @@
+{
+  "appoint": [
+    {
+      "address": "hhdhudshjhgfdfhgf",
+      "city": "khyujhu",
+      "name": "sai",
+      "packagetype": "one time assesment only RS.500",
+      "trainerpreference": "male",
+      "phone": "9533480309",
+      "id": 2
+    },
+    {
+      "address": "hyderbad",
+      "city": "hyderabad",
+      "name": "kumar",
+      "packagetype": "RS.500",
+      "trainerpreference": "male",
+      "phone": "8888888888",
+      "id": 3
+    }
+  ]
+}

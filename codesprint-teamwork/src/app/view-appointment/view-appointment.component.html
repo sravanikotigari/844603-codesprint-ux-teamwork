@@ -1,0 +1,37 @@
+<div class=" card container mt-5">
+
+
+    <table class="table table-hover-sm mt-5">
+      <thead class="thead-dark"  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <th>Sn</th>
+        <th>NAME</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+        <th>PACKAGE</th>
+        <th>PREFERENCE</th>
+        <th>PHONE</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appoint of appoints; let i = index">
+
+          <td>{{i+1}}</td>
+          <td>{{appoint.name|uppercase}}</td>
+          <td>{{appoint.address}}</td>
+          <td>{{appoint.city}}</td>
+          <td>{{appoint.packagetype}}</td>
+          <td>{{appoint.trainerpreference}}</td>
+          <td>{{appoint.phone}}</td>
+        
+
+          <td><input type="button" value="Update" class="btn btn-info" (click) = "updateAppoint(appoint.id)" /></td>
+          <td><input type="button" value="Delete" class="btn btn-secondary" (click) = "deleteAppoint(appoint.id)"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+
+  

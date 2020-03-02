@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <h3 style="font-style: normal;">Update Appointment</h3>
+    <div class="row">
+      <div class="col"><label for="">  Name</label></div>
+      <div class="col"><input type="text" value="{{appoint.name}}" #txtName /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for=""> City</label></div>
+      <div class="col"><input type="text" value="{{appoint.city}}" #txtCity /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Address</label></div>
+      <div class="col"><input type="text" value="{{appoint.address}}" #txtAddress /></div>
+    </div>
+    <div class="row">
+    </div><div class="row">
+        <div class="col"><label for="">Packagetype</label></div>
+        <div class="col"><input type="text" value="{{appoint.packagetype}}" #txtPackagetype /></div>
+      </div>
+      <div class="row">
+    </div><div class="row">
+        <div class="col"><label for="">Trainerpreference</label></div>
+        <div class="col"><input type="text" value="{{appoint.trainerpreference}}" #txtTrainerpreference /></div>
+      </div>
+      <div class="row">
+    </div><div class="row">
+        <div class="col"><label for="">Phone</label></div>
+        <div class="col"><input type="text" value="{{appoint.phone}}" #txtPhone /></div>
+      </div>
+      <div class="row">
+      
+      <div class="col"><input type="button" value="Update" class="btn btn-primary" (click)="updateAppoint(txtName, txtAddress,txtPackagetype,txtCity,txtTrainerpreference,txtPhone)" /></div>
+       
+    </div>
+  </div>
+
+ 

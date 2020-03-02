@@ -1,0 +1,69 @@
+<div class="container">
+ <div class="d-flex justify-content-center ml-4"><i><h1>Contact Us</h1></i></div>
+<hr/>  
+<div class="container contact mt-4 ">
+  <div class="row">
+        <div class="col-8">
+          <div class="card bg-info">
+           <div class="card" style="height:400px">
+                <div class="card-body">
+                  <div class="card bg-primary">
+                  <form name="form" [formGroup]="form" (ngsubmit)="display()">
+                    <div class="form-group">
+                        <div class="col-2"><label>Name:</label></div>
+                        <div class="col-sm-8">          
+                          <input type="text" class="form-control"formControlName="name" placeholder="Please enter First Name" required/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="col-2"><label>Email:</label></div>
+                        <div class="col-sm-8">
+                           <input type="email" class="form-control"formControlName="email"placeholder="Please enter email"required/>
+                        </div>
+                    </div>
+                   <!-- <div class="form-group mb-4">
+                      <div class="col-2"><label>Rate ur experience</label></div>
+                      <div class="col-sm-8">
+                        <div class=".checked">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                  </div>-->
+                <div class="form-group mb-4">
+                      <div class="col-2"><label>Feedback:</label></div>
+                      <div class="col-sm-8">
+                         <input type="text" class="form-control"formControlName="feedback"placeholder="Please give ur feedback"required/>
+                      </div>
+                  </div>
+                    <div class="form-group mt-4">        
+                        <div class="col-2">
+                          <input type="submit" value="submit" (click)="display()">
+                        </div>
+                    </div>
+                  </form>
+                  </div>
+                 </div>
+                </div>
+             </div>
+         </div>   
+        <div class="col-4">
+          <div class="card bg-info">
+        	<div class="card" style="height:400px">
+        		<div class="card-body">            
+        			<h2><u>Address</u></h2>
+        			<p>Fitness Training Center
+        			   Perungudi-524240.</p>
+                     <i class="fas fa-phone">- +91 987654321</i>
+        			    <i class="fas fa-envelope">- fitness@gmail.com</i>
+        			</div>
+        	</div>
+        </div>   
+     </div>
+     
+  </div>
+</div>  
+

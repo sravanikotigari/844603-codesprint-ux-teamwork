@@ -1,0 +1,235 @@
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col">
+           <div class="card shadow-xs">
+               
+                <div class="card-body-lg bg-light">
+                    
+                      <form class="col"   [formGroup]="myFormGroup" (ngSubmit)="save()">
+						  
+                     	  <div class="input-group">
+                               <h3 style="font-family: cursive;font-weight: bold"> Appointment Form</h3>
+                          </div>
+                      
+                       <div class="input-group mt-3 mb-3">
+                                    <div class="input-group-prepend ">
+                                       <span class="input-group-text">Name</span>
+                                    </div>
+                                    <input type="text"  autofocus="firstname" name="firstname" #txtName  pattern='[A-Za-z\\s]*' id="firstname"   placeholder="Firstname" [formControl]="myFormGroup.controls['name']" required/> &nbsp;&nbsp;
+                                    <input type="text" name="lastname"   pattern='[A-Za-z\\s]*' id="lastname" placeholder="LastName" required [formControl]="myFormGroup.controls['name1']"/> 
+                        </div>
+
+                        <div class="input-group mt-3 mb-3">
+                        	 <div class="input-group-prepend">
+                        	 	 <span class=" input-group-text"> Age</span>
+                        	 </div>
+                        	    <input max="60" min="18" type="number" name="Age" id="Age" placeholder="age" required/> &nbsp;&nbsp;
+                        	
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Email</span>
+                          
+                            <input type="email" name="mail" id="mail" placeholder="Mail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required/>
+                        </div> &nbsp; &nbsp;
+
+
+                         <div class="input-group-prepend" id="phone">
+
+                                <span class="input-group-text">+91</span>
+
+                                <input  type="text" id=" first" #txtPhone maxlength="10" [formControl]="myFormGroup.controls['phone']"/>     
+												</div>
+					</div>
+						<hr>
+                       <div>
+                      
+                      <fieldset class="border border-dark p-2">
+						 <legend  class=" w-auto"style="font-weight: bold;font-family: cursive;">Address</legend>
+
+		      
+
+						<div class="col">
+         
+			                  <input type="text" #txtAddress placeholder="Address" class="form-control" [formControl]="myFormGroup.controls['address']" required/>
+			                  <label class="m-auto">Street address</label>
+			            </div>
+			            <br>
+
+                        <div class="row m-auto">
+                        	<div class="col-4">
+                        	
+
+                        	 <input type="text" placeholder="city"  #txtCity class="form-control" [formControl]="myFormGroup.controls['city']"required/>&nbsp;
+					         <label  class="m-auto">City</label>
+					          </div>
+
+						    <div  class="col-4">
+
+                        	 <input type="text" placeholder="State" #txtAddress class="form-control"  required/>
+                        	 <label class="m-auto">State</label>
+						   </div>
+
+					     	<div  class="col-4">
+		
+									<select id="Country" #txtAddress>
+
+									  <option value="India">India</option>
+									  <option value="USA">USA</option>
+									  <option value="Germany">Germany</option>
+									  <option value="France">France</option>
+									</select><br>
+
+									<label class="m-auto">Country</label>
+						        </div>
+					   </div>   
+						    
+						     <div class="col">
+								<div class=" row">
+							    	<div class="col-4">			
+					     		    	<input  type=" text"#txtAddress class="form-control" placeholder="Pincode" pattern="[0-9]{6}" maxlength="6">
+					     			
+									   <label class="m-auto" > Pincode</label>
+								   </div>
+							  </div>
+						
+					    </div>
+				 
+				 </fieldset>
+			
+					<hr>
+					<div>
+						 <h3 style="font-weight: bold;font-family: cursive;">Trainer Preference</h3>
+
+						</div>
+
+						<div>
+						  
+
+							<input type="radio" id="Male"  #txtTrainerpreference   [formControl]="myFormGroup.controls['trainerpreference']"name="trainerpreference" value="male"> Male Trainer<br>
+							<input type="radio" id="FeMale"  #txtTrainerpreference  [formControl]="myFormGroup.controls['trainerpreference']" name="trainerpreference" value="female"> Female Trainer<br>
+						    <input type="radio" id="None"    #txtTrainerpreference   [formControl]="myFormGroup.controls['trainerpreference']" name="trainerpreference"   value="Nopreference"> No preference<br>
+
+
+
+                          
+                            <input type="radio" id="Tname"   #txtTrainerpreference  name="Trainername" value="Trainername"onclick="EnableDisableTextBox()" >Trainername   <input type="text" name="Trainername"  id=" Tn"/>
+                            
+						
+
+                              <input type="radio" name="Others"  #txtTrainerpreference id=" Others" value="other" onclick="EnableDisableTextBox()">Others <input type="text" id="Ot" name="Others" />  
+				
+                        </div>
+						<br>
+                        <div>
+                        	<h3 style="font-weight: bold;font-family: cursive;">Do you need physiotherepist ?</h3>
+
+							<input type="radio" id="yes"  name="yes" value="yes"> yes
+
+							<input type="radio" id="no"   name="yes" value=" yes"> No
+
+                        </div>
+                        <hr>
+
+                        <div>
+                        	<h3 style="font-weight: bold;font-family: cursive;">Appointment : (free)</h3>
+
+                        </div>
+                        <hr>
+					   
+                        <table class=" tabele-hover" border="1px" id="table">
+										  
+										  <tr>
+										    <td scope="col" style="text-align: center;">Day </td>
+										    <th scope="col">7:00am to 9:00am</th>
+										    <th scope="col">9:00 am to 11:00am</th>
+										    <th scope="col">11:00am to 1:00pm</th>
+										    <th scope="col">1:00pm to 3:00pm</th>
+										    <th scope="col">3:00pm to5:00pm</th>
+										  </tr>
+										  <tr  style="text-align: center;">
+										    <th scope="row"> Monday</th>
+										    <td><input type="radio" id="1" name="1" value="1">1</td>
+										    <td><input type="radio" id="2" name="1" value="1">2</td>
+										    <td><input type="radio" id="3" name="1" value="1">3</td>
+										    <td><input type="radio" id="4" name="1" value="1">4</td>
+										    <td><input type="radio" id="5" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Tuseday</th>
+										    <td><input type="radio" id="6" name="1" value="1">1</td>
+										    <td><input type="radio" id="7" name="1" value="1">2</td>
+										    <td><input type="radio" id="8" name="1" value="1">3</td>
+										    <td><input type="radio" id="9" name="1" value="1">4</td>
+										    <td><input type="radio" id="10" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Wedneseday</th>
+										    <td><input type="radio" id="11" name="1" value="1">1</td>
+										    <td><input type="radio" id="12" name="1" value="1">2</td>
+										    <td><input type="radio" id="13" name="1" value="1">3</td>
+										    <td><input type="radio" id="14" name="1" value="1">4</td>
+										    <td><input type="radio" id="15" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row">Thursday</th>
+										    <td><input type="radio" id="16" name="1" value="1">1</td>
+										    <td><input type="radio" id="17" name="1" value="1">2</td>
+										    <td><input type="radio" id="18" name="1" value="1">3</td>
+										    <td><input type="radio" id="19" name="1" value="1">4</td>
+										    <td><input type="radio" id="20" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Friday</th>
+										    <td><input type="radio" id="21" name="1" value="1">1</td>
+										    <td><input type="radio" id="22" name="1" value="1">2</td>
+										    <td><input type="radio" id="23" name="1" value="1">3</td>
+										    <td><input type="radio" id="24" name="1" value="1">4</td>
+										    <td><input type="radio" id="25" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Saturday</th>
+										    <td><input type="radio" id="26" name="1" value="1">1</td>
+										    <td><input type="radio" id="27" name="1" value="1">2</td>
+										    <td><input type="radio" id="28" name="1" value="1">3</td>
+										    <td><input type="radio" id="29" name="1" value="1">4</td>
+										    <td><input type="radio" id="30" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> sunday</th>
+										    <td><input type="radio" id="31" name="1" value="1">1</td>
+										    <td><input type="radio" id="32" name="1" value="1">2</td>
+										    <td><input type="radio" id="33" name="1" value="1">3</td>
+										    <td><input type="radio" id="34" name="1" value="1">4</td>
+										    <td><input type="radio" id="35" name="1" value="1">5</td>
+										  </tr>
+										 
+						</table>
+					
+			    
+				 <hr>
+
+				 <div>
+				 	<h3 style="font-weight: bold;font-family: cursive;">Select a package: </h3>
+				 </div>
+                     <div class="text-align">
+							<input type="radio" id="male"    #txtPackagetype  [formControl]="myFormGroup.controls['packagetype'] "name="cost"   value="RS.500">one time assesment only (RS.500)<br>
+							<input type="radio" id="FeMale"  #txtPackagetype [formControl]="myFormGroup.controls['packagetype']"name="cost"   value="Rs.400">4 weekly sesion (Rs.400)<br>
+						    <input type="radio" id="None"   #txtPackagetype [formControl]="myFormGroup.controls['packagetype']" name="cost"   value=" Rs.300">12 weekly session (Rs.300 )<br>                                   	
+							<input type="radio" name="cost" #txtPackagetype [formControl]="myFormGroup.controls['packagetype']"value=" others ">others<input  class=" form-control col-4"type="text" name="cost" id="empty "><label> Quote will be shared on phone call</label>
+                     
+                
+              <div class="row">
+				<div class="col">
+					 <div class="col-4">		
+                  Quote:  <input type="text" name="cost" id=" cost1" value="" size="3" readonly="readonly"  >
+                  <label >INR</label>.
+
+                  <input type="text" name="cost" id=" cost2" value="00ps" size="3" readonly="readonly">
+                  <label >Paise</label>
+            </div>
+        </div>
+    </div>
+</div>
+          <input type="submit" value="submit" class="btn btn-primary"/>
+</div>
+
+</form>
