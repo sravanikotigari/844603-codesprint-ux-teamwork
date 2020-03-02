@@ -1,0 +1,262 @@
+<p>place-appointment works!</p>
+<script>
+
+</script>
+<form (ngSubmit)="addcom()" name="form2">
+    <div class="container">
+  
+    <div class="form-group">
+      <!--container--> 
+      <label for="form_name">Firstname*:</label>
+                         <input id="form_name" type="text" name="name" [(ngModel)]="name" >
+      <label for="name">Last Name:</label>
+      <input type="text"  id="lname"  name="lname">
+    </div>
+  
+    <div class="form-group">
+      <label for="pwd">Age:</label>
+      <input type="text"  id="age"  name="age">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <label for="email">Email:</label>
+      <input type="email"  id="email" placeholder="Enter email" name="email">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <label for="mobile">Mobile:</label>
+      <input type="mobile"  id="mobile" placeholder="Enter Mobile" name="mobile" [(ngModel)]="phone" maxlength = "10">
+    </div>
+  <!--container--> 
+  <div class="container">
+  
+  <fieldset style="border:F00 1px solid;" >
+    <legend>Address</legend>
+    <input type="text" class="form-control" name="address" [(ngModel)]="Addresss"><br>Street Address<br> 
+    <input type="text"> <input type="text" name="city" [(ngModel)]="city"> <input type="text"><br>
+   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; city &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;state&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;country<br>
+    
+     <label for="pinc">Pincode</label>
+        <input type="pincode"  id="pinc" name="pinc" maxlength = "6">
+   </fieldset>
+  
+   <div class="form-check">
+    <h4>Trainer Preference</h4>
+        <label class="form-check-label" for="radio1">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio"  value="option1" checked>Male Trainer
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female Trainer
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">No Preference
+        </label>
+      </div>
+    
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="radio4"  name="optradio" value="option4">Trainers Name
+  <input type="text" id="txtTrainerName"  />
+        </label>
+      </div>
+     
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">Others
+  <input type="text" id="txtOthers" disabled="disabled" />
+        </label>
+      </div> 
+      <h4>Do you want Physiotherapist ??</h4>
+      <div class="form-check">
+           <label class="form-check-label">
+             <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6"> yes:
+            </label>
+       </div> 
+        <div class="form-check">
+             <label class="form-check-label">
+             <input type="radio" class="form-check-input" id="radio7" name="optradio" value="option7"> no:
+            </label>
+         
+          </div>
+        
+      </div>
+    
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>DAY</th>
+            <th>7:00AM to 9:00AM</th>
+            <th>9:00AM to 11:00AM</th>
+            <th>11:00AM to 01:00PM</th>
+            <th>01:00PM to 03:00PM</th>
+            <th>03:00PM to 05:00PM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>MONDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="monday" value="monday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="monday" value="monday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="monday" value="monday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="monday" value="monday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="monday" value="monday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>TUESDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="tuesday" value="tuesday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="tuesday" value="tuesday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="tuesday" value="tuesday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="tuesday" value="tuesday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="tuesday" value="tuesday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>WEDNESDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="wednesday" value="wednesday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="wednesday" value="wednesday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="wednesday" value="wednesday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="wednesday" value="wednesday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="wednesday" value="wednesday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>THURSDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="thursday" value="thursday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="thursday" value="thursday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="thursday" value="thursday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="thursday" value="thursday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="thursday" value="thursday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>FRIDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="friday" value="friday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="friday" value="friday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="friday" value="friday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="friday" value="friday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="friday" value="friday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>SATURDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="saturday" value="saturday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="saturday" value="saturday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="saturday" value="saturday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="saturday" value="saturday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="saturday" value="saturday5" >
+          </label></div></td>
+          </tr>
+          <tr>
+            <td><b>SUNDAY</b></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="sunday" value="sunday1" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="sunday" value="sunday2" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="sunday" value="sunday3" >
+          </label></div></td>
+           <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="sunday" value="sunday4" >
+          </label></div></td>
+            <td><div class="radio"><label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="sunday" value="sunday5" >
+          </label></div></td>
+          </tr>
+    
+         </tbody> 
+  </table>  
+    
+  <p><b>Select a Package</b></p>
+      <div class="form-check">
+        <label class="form-check-label" for="radio1">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >One time assessment only   (INR 500)
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">4 weekly sessions   (INR 400/session)
+        </label>
+      </div>
+       <div class="form-check">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">12 weekly sessions   (INR 300/session)
+        </label>
+      </div>
+       <div class="form-check">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Others
+        </label>
+        <input type="text" name="others" value="">
+      </div><br/>
+  
+      <p><b>Quote</b></p>
+       <input type="number" name="inr" value="" [(ngModel)]="package"> .  <input type="number" name =  "paise" value="">
+       <p> INR </p><p>         Paise</p>
+      
+      <button type="button" class="btn btn-success" (click)="addcom()">Submit</button>
+  
+        
+  
+  </div>
+  
+  
+  
+  
+  
+    </form>
+    

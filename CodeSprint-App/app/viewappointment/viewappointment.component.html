@@ -1,0 +1,32 @@
+<p>viewappointment works!</p>
+<input type="button" value="view" (click)=" viewcom()"/>
+
+<table class="table" border="2">
+    <tr>
+    
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Package</th>
+        <th>Trainer Reference</th>
+        <th>Phone</th>
+    </tr>
+   <tr *ngFor="let trainer of itemsmodels">
+        <td>{{trainer.id}}</td>
+        <td>{{trainer.name}}</td>
+        <td>{{trainer.Addresss}}</td>
+        <td>{{trainer.city}}</td>
+        <td>{{trainer.package}}</td>
+        <td>{{trainer.trainerreference}}</td>
+        <td>{{trainer.phone}}</td>
+       
+        <!--<td><button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+        <button class="btn btn-dark" (click) ="updateUser(user)">Update</button>
+    
+    </td>-->
+    </tr>
+</table>
+
+
+

@@ -1,0 +1,20 @@
+.mat-toolbar.mat-danger {
+    background: #000103;
+    color: #fff;
+  }
+
+.spacer
+{
+    flex:1 1 auto;
+}
+img {
+    border-radius: 50%;
+    width:10%;
+    height:100px;
+  }
+  body {
+    background-color: rgb(5, 2, 1);
+  }
+
+
+    

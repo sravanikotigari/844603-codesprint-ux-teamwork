@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+<!--<input type="button" value="add" (click)="addcom()"/>
+<input type=“text” name=id [(ngModel)]=id>-->
+<div>
+  <ul>
+    <li *ngFor= "let item of itemsmodels">
+{{item.name}}-{{item.Addresss}}-{{item.city}}-{{item.package}}-{{item.trainerreference}}-{{item.phone}}-{{item.id}}
+
+
+    </li>
+
+  </ul>
+
+  
+</div>
