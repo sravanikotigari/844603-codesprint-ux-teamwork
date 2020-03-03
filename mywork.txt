@@ -9,7 +9,7 @@
 My associate Id: 844603 and my team members are
 1. 844627
 2. 844551
-3. 844619
+3. 844561
 4. 844513
 My mini project is available in Github as” 844603-codesprint-ux-mywork” on Personal Fitness Trainer. My github  link : https://github.com/sravanikotigari/Sravani_fsd.git
 1.	https://github.com/sravanikotigari/844603-codesprint-ux-mywork.git
